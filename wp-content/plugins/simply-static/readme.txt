@@ -2,9 +2,9 @@
 Contributors: patrickposner
 Tags: HTML, static website generator, static site, secure, fast
 Requires at least: 5.4
-Tested up to: 6.2
+Tested up to: 6.1
 Requires PHP: 7.4
-Stable tag: 3.0.4
+Stable tag: 2.2.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -51,11 +51,11 @@ I highly recommend not to use another tool for local development if you are not 
 
 The pro version of Simply Static enhances the plugin with various features.
 
-[youtube https://www.youtube.com/watch?v=PTuw1ChYCdI]
+[youtube https://www.youtube.com/watch?v=PwdO6B7Iet0]
 
 = GitHub Integration =
 
-With the GitHub integration, you can completely automate your entire development process.
+With the GitHub integration, you can completely automate your entire development process. 
 
 The only thing you need is a GitHub account, no knowledge of Git or GitHub itself is required, as Simply Static Pro handles the entire process for you and keeps your repository up to date.
 
@@ -65,17 +65,10 @@ This allows deploying your static website to:
 * Cloudflare Pages
 * Netlify
 * Vercel
+* Amazon S3
+* Digital Ocean Spaces
+* BunnyCDN (and other CDN providers)
 * SFTP to your server
-
-
-= AWS S3 Integration & Digital Ocean Spaces Integration =
-
-Export directly to Amazon AWS S3 from Simply Static Pro. Connect your bucket and run your export.
-
-
-= BunnyCDN Integration =
-
-Export directly to BunnyCDN and get all the benefits of their CDN - including caching, file optimization and DNS management.
 
 
 = Builds and Single Exports =
@@ -115,36 +108,15 @@ Use WPML, Polylang or TranslatePress and run static exports per language or all 
 Simply Static Pro also supports configuring settings per language, using the available language switchers and more to export a your multilingual website as easy as possible.
 
 
-= WP-CLI =
-
-Simply Static Pro has a detailed and comprehensive integration with WP-CLI.
-
-Control every option, run different kinds of exports and more with the WP-CLI integration.
-
-
-= Multisite =
-
-Export your entire network, subsites, change settings on the network level and more.
-
-The multisite integration of Simply Static Pro brings your static network to the next level.
-
-
-= Minification =
-
-Automatically minfiy HTML, CSS and JavaScript files on your static site.
-
-We can even minify inline CSS & JavaScript.
-
-
 = Get the Pro version =
 
-You can get the pro version [here](https://simplystatic.com/simply-static-pro/).
+You can get the pro version [here](https://patrickposner.dev/plugins/simply-static/).
 
 = Tutorials =
 
 I publish new tutorials on how to work with Simply Static and other tools on my blog.
 
-You can check the current tutorials [here](https://simplystatic.com/tutorials/)
+You can check the current tutorials [here](https://patrickposner.dev/tutorials/tag/simply-static/)
 
 
 == Installation ==
@@ -206,86 +178,6 @@ Simply Static creates a static copy of your WordPress site that is intended to b
 3. Diagnostics
 
 == Changelog ==
-
-= 3.0.4 =
-
-* simplified url_exclude upgrade on update
-* disable browser autocomplete on basic auth settings
-* added additional notice with button in settings panel if all auto-migration fails
-
-= 3.0.3 =
-
-* specific version check for migration handler
-* fixed schema option updates
-
-= 3.0.2 =
-
-* fixed iterator for "clear_local_directory" option
-* reworked "force_replace_urls" to the new options patterns (boolean)
-
-= 3.0.1 =
-
-* prevent error on merge excludes if not an array
-* bust object cache after migration
-
-= 3.0 =
-
-* new admin UI for settings
-* new admin UI for diagnostics
-* new admin UI for generate
-* ported ajax requests to Rest API for better performance and maintainability
-* improved diagnostics with better (and more meaningful) error messages
-* conditional settings for certain setups
-* improved support for Windows Azure (path conversion)
-* auto-migration from old settings + manuall trigger
-* import and export settings via JSON
-
-= 2.3.2 =
-
-* bugfix: Elementor asset loading via webpack
-* repositioned filter for HTTPS args to be able to modify all arguments
-* latest version of WP Background processing added
-
-= 2.3.1 =
-
-* improved Elementor asset handling (free and pro version)
-* new filter to modify excludes
-
-= 2.3.0 =
-
-* fix for Yoast sitemap inclusion
-* better approach to extract URLs from HTML
-* added support for WP-CLI integration
-* better task handling with ajax and WP-Cron with progress without reload
-* better quote handling in JSON
-* improved SimplyCDN integration and security token handling
-* fix for redirect pages by removing query args before saving
-* fix for Elementor Pro for data attributes
-
-= 2.2.9 =
-
-* constants for Simply CDN implemented
-* remaining pages as argument in fetch URLs task
-* fixed log updates if running with WP-Cron
-* match_tags improvements for lazyload
-* fixed inline CSS extraction to avoid trailingslash for hexcodes
-
-= 2.2.8 =
-
-* SimplyCDN form improvement for Elementor forms
-* reset settings now in Advanced tab
-* removed unused settings for MU integration
-* added <span> tags to match_tags list
-* improved XML Sitemap handling with Yoast SEO
-* lowered min cURL version in diagnostics
-
-= 2.2.7 =
-
-* SimplyCDN integration
-* added hooks for multisite integration
-* Elementor Pro support (Lottie files and videos)
-* fixed log time with correct timezone
-* removed WP-Cron option, now handled automatically
 
 = 2.2.6 =
 
